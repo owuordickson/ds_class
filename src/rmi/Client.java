@@ -10,7 +10,7 @@ public class Client {
         String host = (args.length < 1) ? null : args[0];
         try {
             Registry registry = LocateRegistry.getRegistry(host);
-            HelloInterface stub = (HelloInterface) registry.lookup("Obj1");
+            MyInterface stub = (MyInterface) registry.lookup("Obj1");
 
             String response = stub.greetMe();
             System.out.println("response: " + response);

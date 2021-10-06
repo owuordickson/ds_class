@@ -9,8 +9,8 @@ public class Server {
     public static void main(String args[]) {
 
         try {
-            RemoteClass obj = new RemoteClass();
-            HelloInterface skeleton = (HelloInterface) UnicastRemoteObject.exportObject(obj, 0);
+            ObjImpl obj = new ObjImpl();
+            MyInterface skeleton = (MyInterface) UnicastRemoteObject.exportObject(obj, 0);
 
             // Bind the remote object's skeleton in the registry
             Registry registry = LocateRegistry.createRegistry(1099);
