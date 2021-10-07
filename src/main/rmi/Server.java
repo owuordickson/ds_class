@@ -1,4 +1,4 @@
-package rmi;
+package main.rmi;
 
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
@@ -9,7 +9,7 @@ public class Server {
     public static void main(String[] args) {
 
         try {
-            ObjImpl obj = new ObjImpl();
+            ImplObj obj = new ImplObj();
             MyInterface skeleton = (MyInterface) UnicastRemoteObject.exportObject(obj, 0);
 
             // Bind the remote object's skeleton in the registry

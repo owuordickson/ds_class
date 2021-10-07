@@ -1,0 +1,17 @@
+syntax = "proto3";
+option java_multiple_files = true;
+package main.proto;
+
+service RpcService {
+  rpc greet (RpcRequest) returns (RpcResponse) {}
+}
+
+message RpcRequest {
+  string name = 1;
+}
+
+message RpcResponse {
+  string greeting = 1;
+}
+
+
