@@ -6,7 +6,7 @@ import java.rmi.server.UnicastRemoteObject;
 
 public class Server {
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
 
         try {
             ObjImpl obj = new ObjImpl();
@@ -18,7 +18,7 @@ public class Server {
 
             System.err.println("Server ready");
         } catch (Exception e) {
-            System.err.println("Server exception: " + e.toString());
+            System.err.println("Server exception: " + e);
             e.printStackTrace();
         }
     }

@@ -15,7 +15,7 @@ public class Client {
             String response = stub.greetMe();
             System.out.println("response: " + response);
         } catch (Exception e) {
-            System.err.println("Client exception: " + e.toString());
+            System.err.println("Client exception: " + e);
             e.printStackTrace();
         }
     }
