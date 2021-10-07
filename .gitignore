@@ -1,6 +1,7 @@
 .idea
 out
 ds_class.iml
+target
 
 # Compiled class file
 *.class
