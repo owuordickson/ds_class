@@ -8,7 +8,7 @@ package com.corba.MyApp;
 */
 
 public abstract class MyPOA extends org.omg.PortableServer.Servant
- implements MyApp.MyOperations, org.omg.CORBA.portable.InvokeHandler
+ implements MyOperations, org.omg.CORBA.portable.InvokeHandler
 {
 
   // Constructors

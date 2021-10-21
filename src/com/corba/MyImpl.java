@@ -1,6 +1,6 @@
 package com.corba;
 
-import MyApp.*;
+import com.corba.MyApp.MyPOA;
 import org.omg.CORBA.ORB;
 
 public class MyImpl extends MyPOA {

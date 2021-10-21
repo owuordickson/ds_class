@@ -1,5 +1,7 @@
 package com.corba;
 
+import com.corba.MyApp.My;
+import com.corba.MyApp.MyHelper;
 import org.omg.CORBA.ORB;
 import org.omg.CosNaming.NamingContextExt;
 import org.omg.CosNaming.NamingContextExtHelper;
@@ -26,7 +28,7 @@ public class Client {
             helloImpl = MyHelper.narrow(ncRef.resolve_str(name));
 
             System.out.println("Obtained a handle on server object: " + helloImpl);
-            System.out.println(helloImpl.sayHello());
+            System.out.println(helloImpl.sayHi());
             helloImpl.shutdown();
 
         } catch (Exception e) {

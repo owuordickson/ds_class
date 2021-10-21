@@ -14,7 +14,7 @@ abstract public class MyHelper
 {
   private static String  _id = "IDL:MyApp/My:1.0";
 
-  public static void insert (org.omg.CORBA.Any a, MyApp.My that)
+  public static void insert (org.omg.CORBA.Any a, My that)
   {
     org.omg.CORBA.portable.OutputStream out = a.create_output_stream ();
     a.type (type ());
@@ -22,7 +22,7 @@ abstract public class MyHelper
     a.read_value (out.create_input_stream (), type ());
   }
 
-  public static MyApp.My extract (org.omg.CORBA.Any a)
+  public static My extract (org.omg.CORBA.Any a)
   {
     return read (a.create_input_stream ());
   }
@@ -32,7 +32,7 @@ abstract public class MyHelper
   {
     if (__typeCode == null)
     {
-      __typeCode = org.omg.CORBA.ORB.init ().create_interface_tc (MyApp.MyHelper.id (), "My");
+      __typeCode = org.omg.CORBA.ORB.init ().create_interface_tc (MyHelper.id (), "My");
     }
     return __typeCode;
   }
@@ -42,22 +42,22 @@ abstract public class MyHelper
     return _id;
   }
 
-  public static MyApp.My read (org.omg.CORBA.portable.InputStream istream)
+  public static My read (org.omg.CORBA.portable.InputStream istream)
   {
     return narrow (istream.read_Object (_MyStub.class));
   }
 
-  public static void write (org.omg.CORBA.portable.OutputStream ostream, MyApp.My value)
+  public static void write (org.omg.CORBA.portable.OutputStream ostream, My value)
   {
     ostream.write_Object ((org.omg.CORBA.Object) value);
   }
 
-  public static MyApp.My narrow (org.omg.CORBA.Object obj)
+  public static My narrow (org.omg.CORBA.Object obj)
   {
     if (obj == null)
       return null;
-    else if (obj instanceof MyApp.My)
-      return (MyApp.My)obj;
+    else if (obj instanceof My)
+      return (My)obj;
     else if (!obj._is_a (id ()))
       throw new org.omg.CORBA.BAD_PARAM ();
     else
@@ -69,12 +69,12 @@ abstract public class MyHelper
     }
   }
 
-  public static MyApp.My unchecked_narrow (org.omg.CORBA.Object obj)
+  public static My unchecked_narrow (org.omg.CORBA.Object obj)
   {
     if (obj == null)
       return null;
-    else if (obj instanceof MyApp.My)
-      return (MyApp.My)obj;
+    else if (obj instanceof My)
+      return (My)obj;
     else
     {
       org.omg.CORBA.portable.Delegate delegate = ((org.omg.CORBA.portable.ObjectImpl)obj)._get_delegate ();

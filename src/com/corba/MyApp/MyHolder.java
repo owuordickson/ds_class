@@ -8,30 +8,30 @@ package com.corba.MyApp;
 
 public final class MyHolder implements org.omg.CORBA.portable.Streamable
 {
-  public MyApp.My value = null;
+  public My value = null;
 
   public MyHolder ()
   {
   }
 
-  public MyHolder (MyApp.My initialValue)
+  public MyHolder (My initialValue)
   {
     value = initialValue;
   }
 
   public void _read (org.omg.CORBA.portable.InputStream i)
   {
-    value = MyApp.MyHelper.read (i);
+    value = MyHelper.read (i);
   }
 
   public void _write (org.omg.CORBA.portable.OutputStream o)
   {
-    MyApp.MyHelper.write (o, value);
+    MyHelper.write (o, value);
   }
 
   public org.omg.CORBA.TypeCode _type ()
   {
-    return MyApp.MyHelper.type ();
+    return MyHelper.type ();
   }
 
 }

@@ -8,7 +8,7 @@ package com.corba.MyApp;
 * Thursday, October 21, 2021 8:24:49 PM EAT
 */
 
-public class _MyStub extends org.omg.CORBA.portable.ObjectImpl implements MyApp.My
+public class _MyStub extends org.omg.CORBA.portable.ObjectImpl implements My
 {
 
   public String sayHi ()
