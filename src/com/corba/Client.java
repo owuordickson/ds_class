@@ -1,5 +1,9 @@
 package com.corba;
 
+import org.omg.CORBA.ORB;
+import org.omg.CosNaming.NamingContextExt;
+import org.omg.CosNaming.NamingContextExtHelper;
+
 public class Client {
 
     static My helloImpl;
