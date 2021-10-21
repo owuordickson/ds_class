@@ -2,7 +2,7 @@ package com.corba;
 
 import com.corba.MyApp.My;
 import com.corba.MyApp.MyHelper;
-import org.omg.CORBA.ORB;
+import org.omg.CORBA.*;
 import org.omg.CosNaming.NamingContextExt;
 import org.omg.CosNaming.NamingContextExtHelper;
 
