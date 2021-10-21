@@ -1,0 +1,7 @@
+module MyApp {
+
+  interface My {
+    string sayHi();
+    oneway void shutdown();
+  };
+};
