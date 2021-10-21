@@ -1,7 +1,6 @@
-package main.corba;
+package com.corba;
 
 import MyApp.*;
-import java.util.Properties;
 
 public class MyImpl extends MyPOA {
     private ORB orb;

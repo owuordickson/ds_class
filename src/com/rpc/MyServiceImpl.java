@@ -1,9 +1,9 @@
-package main.rpc;
+package com.rpc;
 
 import io.grpc.stub.StreamObserver;
-import main.proto.RpcRequest;
-import main.proto.RpcResponse;
-import main.proto.RpcServiceGrpc;
+import com.proto.RpcRequest;
+import com.proto.RpcResponse;
+import com.proto.RpcServiceGrpc;
 
 public class MyServiceImpl extends RpcServiceGrpc.RpcServiceImplBase {
 

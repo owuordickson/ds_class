@@ -1,4 +1,4 @@
-package main.corba;
+package com.corba;
 
 public class Client {
 

@@ -1,10 +1,10 @@
-package main.rpc;
+package com.rpc;
 
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
-import main.proto.RpcRequest;
-import main.proto.RpcResponse;
-import main.proto.RpcServiceGrpc;
+import com.proto.RpcRequest;
+import com.proto.RpcResponse;
+import com.proto.RpcServiceGrpc;
 
 public class GrpcClient {
     public static void main(String[] args) {

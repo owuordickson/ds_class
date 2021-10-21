@@ -1,4 +1,4 @@
-package main.rpc;
+package com.rpc;
 
 import io.grpc.Server;
 import io.grpc.ServerBuilder;

@@ -1,8 +1,7 @@
-package main.corba;
+package com.corba;
 
 import MyApp.*;
 import org.omg.CosNaming.*;
-import org.omg.CosNaming.NamingContextPackage.*;
 import org.omg.CORBA.*;
 import org.omg.PortableServer.*;
 import org.omg.PortableServer.POA;
