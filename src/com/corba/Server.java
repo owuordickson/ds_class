@@ -1,6 +1,5 @@
 package com.corba;
 
-import MyApp.*;
 import com.corba.MyApp.My;
 import com.corba.MyApp.MyHelper;
 import org.omg.CosNaming.*;
